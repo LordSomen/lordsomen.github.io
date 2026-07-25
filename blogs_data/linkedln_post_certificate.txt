@@ -1,0 +1,68 @@
+As the year is ending , reflecting on the year , it has been a challenging year , I have understood the how much effective Discipline and Time management 
+does on our work life balance , overall effective learning . Also as new learning challenges  , trends are emerging the effectiveness of staying connected
+and sharing your learnings with the community is really important for effective learning . So , I have decided to stay much more active next year on this 
+platform for the community, and share my learning , and try to help with sharing resources with everyone . 
+
+As part of that , I am sharing some of my achievements from this year , 
+
+I am happy to share that I have successfully completed , Mircrosoft Certification on Data Scientist Associate. 
+It's been a great learning experience , I have to learn from various aspects , like Data pipeline , Machine Learning , DataBricks ,
+Design and prepare a machine learning solution
+Explore data, and run experiments
+Train and deploy models
+Machine Learning Pipeline
+Optimize LLM models for AI applications , Azure AI foundry , Azure Machine learning 
+Your responsibilities for this role include:
+
+Designing and creating a suitable working environment for data science workloads.
+Exploring data.
+Training machine learning models.
+Implementing pipelines.
+Running jobs to prepare for production.
+Managing, deploying, and monitoring scalable machine learning solutions.
+Using language models for building AI applications.
+As a candidate for this certification, you should have knowledge and experience in data science by using:
+
+Azure Machine Learning
+MLflow
+Azure AI services, including Azure AI Search
+Azure AI Foundry
+
+
+
+As the year comes to an end, I’ve been taking a moment to reflect—and honestly, this year was challenging. It tested my patience, consistency, and confidence, but it also taught me something I’ll carry forward: how much discipline and time management can shape work-life balance and make learning feel sustainable instead of overwhelming.
+​
+
+With new tools, trends, and learning challenges emerging so quickly, I’ve also realized that learning in isolation has limits. Staying connected, sharing what you’re learning, and contributing back to the community can make the journey clearer, lighter, and more meaningful.
+​
+
+So next year, I’m choosing to be more active here on LinkedIn—sharing my progress, lessons, and resources that might help others who are building in data science and AI.
+
+
+’m happy to share that I successfully completed the Microsoft Certified: Azure Data Scientist Associate (DP-100) certification.
+​
+This certification was more than an exam for me—it was a structured way to strengthen my understanding of building real machine learning solutions end-to-end.
+​
+
+Some areas I worked through during this journey:
+
+Designing and preparing a machine learning solution
+​
+
+Exploring data and running experiments
+​
+
+Training, deploying, and operationalizing models
+​
+
+Building ML pipelines and preparing jobs for production workflows
+​
+
+Working with tools and platforms like Azure Machine Learning, MLflow, and Azure AI services (including Azure AI Search and Azure AI Foundry)
+​
+
+For anyone who’s planning to take DP-100, here’s the official exam guide and skills measured:
+https://learn.microsoft.com/en-gb/credentials/certifications/resources/study-guides/dp-100
+​
+#YearEndAchievement #Certification #AI #Microsoft #ContinuousLearning #Datascience #Azure
+#Databricks #DataEngineering #Upskilling #Growth

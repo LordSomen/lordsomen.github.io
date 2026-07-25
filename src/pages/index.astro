@@ -1,0 +1,120 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../lib/createSlug"
+
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="w-full mb-8">
+      <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2000&auto=format&fit=crop" alt="AI and Machine Learning Cover" class="w-full h-[300px] object-cover rounded-xl shadow-lg" />
+    </div>
+    <div class="text-xl py-1">Hey there 👋</div>
+    <div class="text-5xl font-bold">I'm Soumyajit Pal</div>
+    
+    <div class="text-3xl py-3 font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+      Bridging the Gap Between Advanced AI Research and Scalable Production Systems.
+    </div>
+
+    <div class="text-2xl py-2 font-semibold">
+      Machine Learning Engineer | Data Scientist | Software Engineer
+    </div>
+    
+    <div class="py-2">
+      <p class="text-lg">
+        I am an <b>AI & Machine Learning Engineer</b> specializing in end-to-end GenAI deployment, multimodal architectures, and MLOps. Currently pursuing an MTech in Data Science at IIT Hyderabad while bringing over six years of full-stack experience to solve complex, real-world engineering challenges.
+      </p>
+    </div>
+    
+    <div class="mt-8 flex flex-wrap gap-4">
+      <a class="btn btn-primary" href="#projects"> Explore My Projects</a>
+      <a class="btn btn-secondary" href="https://www.linkedin.com/in/soumyajit-pal-810283152/" target="_blank"> Let's Connect (LinkedIn)</a>
+      <a class="btn btn-outline" href="https://github.com/LordSomen" target="_blank"> View GitHub / Research</a>
+    </div>
+
+    <div class="mt-12">
+
+      <p class="text-lg mb-4 text-justify">
+        My journey in tech began in the fast-paced startup ecosystem, where I engineered scalable backend infrastructure and built REST APIs to support healthcare machine learning applications. Managing end-to-end data pipelines and rescuing legacy projects under tight deadlines taught me how to ship reliable, optimized code.
+      </p>
+      <p class="text-lg mb-4 text-justify">
+        Driven by a passion for predictive optimization, I transitioned into enterprise data analytics, upgrading risk segmentation models and implementing robust continuous-monitoring pipelines on Azure. Today, alongside rigorous, research-intensive coursework in high-performance computing, my focus is locked on the cutting edge of Artificial Intelligence. I specialize in translating complex mathematical derivations from academic research—such as Vision-Language Models and Test-Time Adaptation—directly into scalable, production-ready code.
+      </p>
+      <p class="text-lg text-justify">
+        Whether it is optimizing a Retrieval-Augmented Generation (RAG) agent for lower latency or orchestrating parallel processing across stacked V100 GPUs, I build AI systems that drive immediate business value.
+      </p>
+    </div>
+
+    <div class="mt-12">
+      <h2 class="text-3xl font-bold mb-4">Core Technical Capabilities</h2>
+      <ul class="list-disc list-inside text-lg space-y-2">
+        <li><b>Generative AI & Applied LLMs:</b> Designing custom RAG architectures, LoRA fine-tuning for specialized datasets, Agentic AI workflows, and implementing semantic search via Vector Databases.</li>
+        <li><b>Advanced Research & Architectures:</b> Deep expertise in Vision-Language Models (BioMedCLIP, CLIP), Test-Time Adaptation frameworks (TENT, TPT, EATA), and zero-shot anomaly detection.</li>
+        <li><b>Backend & MLOps Infrastructure:</b> Building modular, serverless RESTful APIs (FastAPI, AWS Lambda), managing CI/CD pipelines, containerization (Docker), and tracking model drift (MLflow).</li>
+        <li><b>Languages & Frameworks:</b> Python, PyTorch, TensorFlow, PostgreSQL, Databricks, Hugging Face Transformers.</li>
+        <li><b>Cloud Ecosystems:</b> Microsoft Azure (DP-100 Certified), AWS Serverless, Slurm workload managers.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="projects" class="scroll-mt-10">
+    <div class="text-3xl w-full font-bold mb-2">My latest projects {"</>"}</div>
+  </div>
+
+  <HorizontalCard
+    title="Generative AI Playground"
+    img="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop"
+    desc="A playground containing Generative AI projects, experiments, and explorations into multimodal architectures and Agentic workflows."
+    url="/blog/generative-ai-playground"
+    badge="GEN AI"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="AI Agents"
+    img="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200"
+    desc="Detailed overview and implementation of the AI Agents project."
+    url="/blog/ai-agents"
+    badge="GEN AI"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="DeepLearning"
+    img="https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1200"
+    desc="Detailed overview and implementation of the DeepLearning project."
+    url="/blog/deeplearning"
+    badge="Deep Learning"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Azure ML"
+    img="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1200"
+    desc="Detailed overview and implementation of the Azure ML project."
+    url="/blog/azure-ml"
+    badge="Cloud/MLOps"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+  </div>
+
+  {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + createSlug(post.data.title, post.slug)}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
+</BaseLayout>

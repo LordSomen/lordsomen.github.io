@@ -1,0 +1,167 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    <p class="mb-4">
+      As a seasoned professional with almost 4 years of experience in the tech realm, I've navigated the landscapes of software engineering and data analytics, each phase adding depth to my skill set.
+    </p>
+    <p class="mb-4">
+      <strong>Backend Maestro:</strong> For 2.5 years, I honed my expertise as a Senior Software Engineer, mastering the intricacies of backend technologies, system design, database architecture as well as various cloud technologies. My journey included managing leadership responsibilities, multiple project management, and providing mentorship to amazing young folks.
+    </p>
+    <p class="mb-4">
+      <strong>From Code to Insights:</strong> Transitioning into the realm of data, I've embraced the role of a Senior Data Analyst (Analytics Practitioner). My focus lies in the world of Machine Learning modeling, where I thrive on deciphering patterns, extracting insights, and crafting compelling narratives from data. I'm not just about algorithms; I'm about stories that data tells.
+    </p>
+    <p class="mb-4">
+      <strong>Passion for Impact & What Drives Me:</strong> I believe in the transformative power of data and the stories it unfolds. Whether it's architecting systems for efficiency or unraveling the tales hidden in datasets, my goal is to drive meaningful impact through technology. The intersection of technology and human experience fuels my passion. I'm driven by the belief that every line of code and every data point has the potential to shape a better, smarter, and more connected world.
+    </p>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Master of Technology, MTech Data Science (CSE)"
+      subtitle="2024 to 2027 at Indian Institute of Technology Hyderabad, India"
+    />
+    <TimeLineElement
+      title="Bachelor of Technology - BTech, Information Technology"
+      subtitle="2015 to 2019 at Meghnad Saha Institute Of Technology (MSIT), India"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Analytics Practitioner"
+      subtitle="From November 2022 to Present at Accenture, Kolkata, India"
+    >
+      As a Senior Data Analyst, I leverage Python and ML Processes, Algorithms, and libraries to develop and implement innovative machine learning models and solutions that improve business outcomes and support R&D initiatives. Work closely with clients to identify new business opportunities and develop data-driven solutions that align with organizational goals. Create dynamic reports and dashboards using Python, Power BI, and Excel, and use data visualization tools to communicate insights that drive decision-making.
+    </TimeLineElement>
+    <TimeLineElement
+      title="SDE-II: Senior Software Engineer (Backend)"
+      subtitle="From September 2021 to November 2022 at CarePlix, Kolkata, India"
+    >
+      I worked with the stack of Python 3, AWS, PostgreSQL, and backend related tools. My day-to-day tasks included Database designing, API designing, System Design, as well as deployment and testing of databases and APIs using AWS and other tools. I also took interviews for the recruitment of new candidates for the organization.
+    </TimeLineElement>
+    <TimeLineElement
+      title="SDE: Backend Developer"
+      subtitle="From June 2020 to September 2021 at CarePlix, Kolkata, India"
+    >
+      I worked with the stack of Python 3, AWS, PostgreSQL, and backend related tools. My day-to-day tasks included Database designing, API designing, as well as deployment and testing of databases and APIs using AWS and other tools.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Software Developer"
+      subtitle="From March 2020 to June 2020 at Resto-G, Kolkata, India"
+    >
+      Worked on a contract basis developing software solutions.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Freelance Software Engineer"
+      subtitle="From June 2019 to December 2019 at Self Employed (Jobcirkit), Kolkata, India"
+    >
+      Worked for a company named Jobcirkit on a freelance contract basis.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Notable Achievements</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Enterprise Propensity Modeling & Risk Scorecard Pipeline"
+      subtitle="Role: Machine Learning Engineer / Senior Data Scientist | Domain: Risk Modeling, Equipment Logistics, Telephony Routing & Automation"
+    >
+      <div class="text-justify mb-4">
+        Designed, architected, and deployed an end-to-end, auditable machine learning pipeline to predict customer 45-day equipment return propensity. The system optimizes contact center operations by automatically segmenting customers into actionable risk tiers, shifting low-risk interactions to low-cost digital automation while focusing live agent capacity on high-risk recovery cases.
+      </div>
+      <h3 class="font-semibold mb-2 mt-4 text-lg">Key Technical & Engineering Achievements</h3>
+      <ul class="list-disc mx-6 mb-4 grid gap-2">
+        <li><strong>Matured-Population Logic:</strong> Designed strict temporal cohort filtering to enforce maturity windows, eliminating label leakage and survival bias during model training and evaluation.</li>
+        <li><strong>365-Day Behavioral Scorecard:</strong> Engineered dynamic behavioral features capturing trailing 1-year historical metrics to establish baseline customer reliability profiles.</li>
+        <li><strong>Non-Linear Signal Extraction:</strong> Applied optimal binning on continuous financial features to allow linear scorecard models to capture non-linear relationships.</li>
+        <li><strong>Latent Feature Extraction:</strong> Mined regional recovery indicators from telephone area code distributions, transforming unstructured contact details into structured geographic predictive signals.</li>
+        <li><strong>Hybrid Machine Learning Architecture:</strong> Architected a dual-engine system combining a Logistic Regression scorecard engine with a Decision Tree segmentation layer, optimizing for rank-ordering using the Gini Coefficient (0.323 Dev, 0.295 Val).</li>
+        <li><strong>Explainability, Governance & Telemetry:</strong> Designed an automated model driver export process (`coefficients_Export()`) and guaranteed 100% mathematical transparency for enterprise governance.</li>
+        <li><strong>Operational Integration:</strong> Operationalized model outputs by feeding real-time customer segments directly into omnichannel contact center software (Five9 queues) and automated interactive voice/SMS systems (IVA).</li>
+      </ul>
+      <h3 class="font-semibold mb-2 mt-4 text-lg">Advanced Architecture & Future Capabilities (v2.0)</h3>
+      <ul class="list-disc mx-6 mb-4 grid gap-2">
+        <li><strong>Semantic Intent Extraction:</strong> Architected a modern NLP pipeline leveraging BERT sentence embeddings and a Vector Database to index unstructured call notes.</li>
+        <li><strong>Retrieval-Augmented Generation (RAG):</strong> Designed a RAG workflow using LLMs to retrieve customer call history and summarize intent into structured categories.</li>
+        <li><strong>Cost & Compute Optimization:</strong> Engineered strategies for LLM workloads, including Delta Processing, Asynchronous Batch API Processing, and plans for fine-tuning Small Language Models (SLMs).</li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Data Pipelines, GenAI POCs, and Model Optimization"
+      subtitle="Role: Analytics Practitioner | Company: Accenture"
+    >
+      <div class="text-justify mb-4">
+        Led R&D initiatives to optimize machine learning models and architect foundational cloud data pipelines to support advanced analytics and GenAI integration.
+      </div>
+      <ul class="list-disc mx-6 mb-4 grid gap-2">
+        <li><strong>Cloud Data Pipeline Architecture:</strong> Created a POC data pipeline using Azure Functions, SQL Blob, and Python for complex ETL tasks, which is currently utilized by Data Engineering to deploy full ML models.</li>
+        <li><strong>Machine Learning Model Optimization:</strong> Enhanced existing models, achieving a 10% improvement in accuracy and a 5% reduction in training time for one model. Optimized another model to achieve an 8% decrease in overall training time.</li>
+        <li><strong>Advanced R&D and Generative AI:</strong> Led RL and Python automation projects. Currently building a GenAI POC to explore customer service automation and chatbot development using LLMs.</li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Technical Leadership and Backend System Optimization"
+      subtitle="Role: Software Development Engineer-II | Company: Craftveda Technology"
+    >
+      <div class="text-justify mb-4">
+        Assumed leadership during a critical transition, rescuing legacy projects and drastically reducing backend system bugs while building robust infrastructure for ML applications.
+      </div>
+      <ul class="list-disc mx-6 mb-4 grid gap-2">
+        <li><strong>Technical Leadership & Mentorship:</strong> Acted as temporary Team Lead for 5 months, managing three engineers and delivering critical features under demanding deadlines.</li>
+        <li><strong>Legacy System Rescue:</strong> Inherited a buggy project and successfully completed it on time while introducing new critical features, earning recognition for bug-free, clean code.</li>
+        <li><strong>Massive Bug Reduction:</strong> Achieved an 81% reduction in high-priority issues, 48.5% in medium-priority, and 27% in low-priority backend bugs.</li>
+      </ul>
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications & Honors</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>Reinvention with Agentic AI</li>
+    <li>Microsoft Certified: Azure Data Scientist Associate</li>
+    <li>Machine Learning Engineering for Production (MLOps)</li>
+    <li>Android Developer Nanodegree Graduate</li>
+    <li>Problem Solving (Basic)</li>
+    <li>UEM Hackathon 2018 Winner (Honors-Awards)</li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Top Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Generative AI</li>
+    <li>Data Science</li>
+    <li>Large Language Models (LLM)</li>
+    <li>Python</li>
+    <li>Machine Learning</li>
+    <li>Deep Learning</li>
+    <li>AWS Cloud</li>
+    <li>PostgreSQL</li>
+    <li>Backend Development</li>
+    <li>System Design</li>
+    <li>Database Architecture</li>
+    <li>Data Analytics</li>
+    <li>Power BI</li>
+  </ul>
+</BaseLayout>
