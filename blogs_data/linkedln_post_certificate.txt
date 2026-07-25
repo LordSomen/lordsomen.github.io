@@ -5,7 +5,7 @@ platform for the community, and share my learning , and try to help with sharing
 
 As part of that , I am sharing some of my achievements from this year , 
 
-I am happy to share that I have successfully completed , Mircrosoft Certification on Data Scientist Associate. 
+I am happy to  share that I have successfully completed , Mircrosoft Certification on Data Scientist Associate. 
 It's been a great learning experience , I have to learn from various aspects , like Data pipeline , Machine Learning , DataBricks ,
 Design and prepare a machine learning solution
 Explore data, and run experiments
@@ -23,7 +23,7 @@ Managing, deploying, and monitoring scalable machine learning solutions.
 Using language models for building AI applications.
 As a candidate for this certification, you should have knowledge and experience in data science by using:
 
-Azure Machine Learning
+Azure Machine Learning & Data Science
 MLflow
 Azure AI services, including Azure AI Search
 Azure AI Foundry
