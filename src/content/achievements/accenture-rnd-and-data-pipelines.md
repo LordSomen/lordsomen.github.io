@@ -24,7 +24,7 @@ Here is a detailed breakdown of my key professional achievements and R&D contrib
 
 #### **2. Machine Learning Model Optimization**
 * **Accuracy & Efficiency Gains:** Contributed significantly to the enhancement of existing machine learning models. For one key model, I achieved a **10% improvement in accuracy** while simultaneously reducing training time by **5%**.
-* **Trade-off Optimization:** For another complex model, I managed trade-offs effectively—despite a 17.75% increase in base training time, the optimizations resulted in an **8% decrease in overall end-to-end processing time**.
+* **Trade-off Optimization:** For another complex model, I managed trade-offs effectively, despite a 17.75% increase in base training time, the optimizations resulted in an **8% decrease in overall end-to-end processing time**.
 
 #### **3. Advanced R&D and Generative AI**
 * **R&D Recognition:** Due to exceptional performance in Research & Development and POC building, I was selected to lead several advanced projects focusing on **Reinforcement Learning**, **Python Automation**, and **Power Automate**.
